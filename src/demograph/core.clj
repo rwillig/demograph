@@ -6,10 +6,6 @@
 (def fourth #(nth % 3))
 (def extract #(str (first %) (second %) (third %) (fourth %)))
 
-(defn parse-master-file-row
-  [row]
-  row)
-
 (defn read-master-file
  [file-name]
  (with-open [rdr (io/reader file-name)]
